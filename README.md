@@ -1,74 +1,53 @@
-# Employee Attendance Analyzer
+# Overview
 
-## Overview
+As a software engineer, I am learning how to use Python and data analysis libraries to work with real-world data. For this project, I created an Employee Attendance Analyzer that reads attendance records, cleans the data, analyzes the results, and presents the findings in a graph.
 
-The Employee Attendance Analyzer is a Python program that analyzes employee attendance data. The program uses Pandas to clean and analyze the data and Matplotlib to create a graph.
+The dataset contains employee attendance records for February 2026. It includes employee IDs, dates, time in, time out, hours worked, and attendance status. I obtained the dataset from a free public GitHub repository:
 
-The program answers two questions:
+https://github.com/LibaMariyamK/powerquery-project-hr-analytics
 
-1. Which employee worked the most total hours?
-2. What was the most common attendance status?
+The purpose of writing this software is to practice using Python and Pandas to analyze a real dataset and answer questions based on the data. The program cleans inconsistent data, converts hours worked into numbers, groups and sorts employee records, counts attendance statuses, and creates a graph to make the results easier to understand.
 
-The program also creates a bar graph showing the top 10 employees by total hours worked.
-
-## Dataset
-
-The dataset contains employee attendance records for February 2026. It includes employee IDs, dates, time in, time out, hours worked, and attendance status.
-
-The dataset was obtained from a free public GitHub dataset.
-
-The program cleans some of the data before analyzing it. Employee IDs are converted to a consistent format, values such as "8 hrs" are converted to numbers, and different spellings of attendance statuses are grouped into the same category.
-
-## Analysis Questions
+# Data Analysis Results
 
 ### Question 1: Which employee worked the most total hours?
 
-The program converts the Hours Worked column into numbers and groups the records by EmployeeID. It then adds the hours for each employee and sorts the results from highest to lowest.
+The program converted the Hours Worked values into numbers and grouped the records by employee. It then added the total hours for each employee and sorted the results from highest to lowest.
 
-The result shows that **EMP022 worked the most total hours with 155.5 hours**.
-
-This analysis uses data conversion, aggregation, and sorting.
+**Answer:** EMP022 worked the most total hours with **155.5 hours**.
 
 ### Question 2: What was the most common attendance status?
 
-The program cleans the Status column so that different versions of the same status are counted together. It then counts the number of records for each status.
+The program cleaned the different versions of the attendance statuses and counted how many times each status appeared.
 
-The result shows that **Present was the most common attendance status with 671 records**.
+**Answer:** **Present** was the most common attendance status with **671 records**.
 
-This analysis uses data conversion and counting.
+The program also creates a bar graph showing the top 10 employees by total hours worked.
 
-## Graph
+# Development Environment
 
-The program creates a bar graph showing the top 10 employees by total hours worked. The graph makes it easier to compare the employees with the highest total hours.
+I developed this software using:
 
-## Technologies Used
-
-* Python
-* Pandas
-* Matplotlib
 * Visual Studio Code
+* Python
+* Git
+* GitHub
 
-## How to Run the Program
+The programming language used was **Python**. I used the following libraries:
 
-1. Make sure Python is installed.
-2. Install the required libraries:
+* **Pandas** for reading, cleaning, converting, grouping, sorting, and analyzing the attendance data.
+* **Matplotlib** for creating the bar graph.
 
-py -m pip install pandas matplotlib
+# Useful Websites
 
+* [GitHub Dataset](https://github.com/LibaMariyamK/powerquery-project-hr-analytics)
+* [Pandas Documentation](https://pandas.pydata.org/docs/)
+* [Matplotlib Documentation](https://matplotlib.org/stable/)
+* [Python Documentation](https://docs.python.org/3/)
 
-3. Place `attendance.csv` in the same folder as `main.py`.
-4. Open the project folder in Visual Studio Code.
-5. Open the terminal.
-6. Run:
+# Future Work
 
-
-py main.py
-
-
-The program will display the analysis results in the terminal and open the graph.
-
-## Project Files
-
-* `main.py` - Contains the Python program and analysis functions.
-* `attendance.csv` - Contains the employee attendance dataset.
-* `README.md` - Contains information about the project and how to use it.
+* Add more analysis questions to provide additional information about employee attendance.
+* Add more graphs to compare attendance statuses and employee performance.
+* Add date-based analysis to compare attendance across different days or weeks.
+* Improve the handling of missing attendance data.
