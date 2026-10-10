@@ -1,53 +1,47 @@
 # Overview
 
-As a software engineer, I am learning how to use Python and data analysis libraries to work with real-world data. For this project, I created an Employee Attendance Analyzer that reads attendance records, cleans the data, analyzes the results, and presents the findings in a graph.
+The Employee Attendance Analyzer is a Python program that analyzes employee attendance records to identify attendance patterns and summarize important information. I developed this project to improve my skills in Python programming, data analysis, and working with real-world datasets.
 
-The dataset contains employee attendance records for February 2026. It includes employee IDs, dates, time in, time out, hours worked, and attendance status. I obtained the dataset from a free public GitHub repository:
+The dataset contains employee attendance records, including employee IDs, attendance dates, attendance statuses, and hours worked. The program processes the data to summarize attendance statuses, calculate total hours worked, and identify employees with the highest total hours.
 
-https://github.com/LibaMariyamK/powerquery-project-hr-analytics
+**Dataset Source:** (https://github.com/LibaMariyamK/powerquery-project-hr-analytics/blob/main/RawData/Attendance_Feb.csv)
 
-The purpose of writing this software is to practice using Python and Pandas to analyze a real dataset and answer questions based on the data. The program cleans inconsistent data, converts hours worked into numbers, groups and sorts employee records, counts attendance statuses, and creates a graph to make the results easier to understand.
+The purpose of this project is to make employee attendance information easier to understand by using Python to clean, process, and analyze the data. It also helped me gain practical experience using data analysis libraries and presenting results clearly.
 
 # Data Analysis Results
 
-### Question 1: Which employee worked the most total hours?
+The program answered the following questions:
 
-The program converted the Hours Worked values into numbers and grouped the records by employee. It then added the total hours for each employee and sorted the results from highest to lowest.
+1. **Which employee recorded the highest total hours worked?**  
+   EMP006 recorded the highest total, with 139 hours.
 
-**Answer:** EMP022 worked the most total hours with **155.5 hours**.
+2. **How many attendance records were recorded for each status?**
+   - Present: 671
+   - Absent: 66
+   - Leave: 36
+   - Half Day: 31
 
-### Question 2: What was the most common attendance status?
-
-The program cleaned the different versions of the attendance statuses and counted how many times each status appeared.
-
-**Answer:** **Present** was the most common attendance status with **671 records**.
-
-The program also creates a bar graph showing the top 10 employees by total hours worked.
+These results provide a summary of employee attendance and working hours in the dataset.
 
 # Development Environment
 
-I developed this software using:
+I developed the Employee Attendance Analyzer using Visual Studio Code and Python.
 
-* Visual Studio Code
-* Python
-* Git
-* GitHub
+The program was written in Python. I used the following libraries:
 
-The programming language used was **Python**. I used the following libraries:
-
-* **Pandas** for reading, cleaning, converting, grouping, sorting, and analyzing the attendance data.
-* **Matplotlib** for creating the bar graph.
+- **pandas:** To load, clean, organize, and analyze the attendance data.
+- **matplotlib:** To create visualizations of the analysis results.
 
 # Useful Websites
 
-* [GitHub Dataset](https://github.com/LibaMariyamK/powerquery-project-hr-analytics)
-* [Pandas Documentation](https://pandas.pydata.org/docs/)
-* [Matplotlib Documentation](https://matplotlib.org/stable/)
 * [Python Documentation](https://docs.python.org/3/)
+* [pandas Documentation](https://pandas.pydata.org/docs/)
+* [Matplotlib Documentation](https://matplotlib.org/stable/)
+* [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 
 # Future Work
 
-* Add more analysis questions to provide additional information about employee attendance.
-* Add more graphs to compare attendance statuses and employee performance.
-* Add date-based analysis to compare attendance across different days or weeks.
-* Improve the handling of missing attendance data.
+* Improve data cleaning to handle missing values and inconsistent attendance records more effectively.
+* Add more visualizations to make attendance patterns easier to understand.
+* Allow users to analyze attendance records for specific employees or date ranges.
+* Expand the analysis to identify trends in employee absences and working hours.
